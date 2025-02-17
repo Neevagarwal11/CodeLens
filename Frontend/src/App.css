@@ -1,0 +1,27 @@
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  /* padding: 1rem; */
+  display: flex;
+  gap: 1rem;
+}
+
+.main .left , .main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  border: 2px solid green;
+} 
+
+.main.left{
+  background-color: black;
+}
+
+.main .right{
+  background-color: beige;
+}
