@@ -1,27 +1,68 @@
-#root{
-  height: 100%;
-  width: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main{
+#root , html , body{
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
   height: 100%;
   width: 100%;
-  /* padding: 1rem; */
+  padding: 1.5rem;
   display: flex;
   gap: 1rem;
 }
 
-.main .left , .main .right{
+main .left ,
+main .right{
   height: 100%;
+  width: 50%;
   flex-basis: 50%;
   border-radius: 0.7rem;
-  border: 2px solid green;
 } 
 
-.main.left{
-  background-color: black;
+main .left{
+  background-color: rgb(40, 40, 40);
+  position: relative;
+  overflow: hidden;
 }
 
-.main .right{
+main .right{
   background-color: beige;
+}
+
+.btn{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: beige;
+  color: black;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+
+}
+
+.code{
+  height: 100%;
+  border: none;
+  width: 100%;
+  color: white;
+  caret-color: beige;
+}
+
+.right{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  overflow: auto;
 }
